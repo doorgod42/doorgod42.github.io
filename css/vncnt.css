@@ -19,7 +19,12 @@
 @import url('barebones.css');
 
 @media screen and (prefers-color-scheme: dark) {
+  .safari10 { 
+    color:#d4d4e2; 
+    background-color:#1d1436; 
+  }
   :root {
+    
     /* dark theme: light background, dark text, blue accent */
     --theme-hue: 0;         /* black */
     --accent-hue: 194;      /* blue */
@@ -62,6 +67,8 @@
   */
 }
 
+.night { background: #333; color: white; }
+
 .nexa_bold {    
   font-weight: 300;
   font-family: "Nexa Bold", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -91,7 +98,7 @@ p.reset-margin {
   margin-bottom: 1rem; /*skeleton.css: 2.5rem*/
 }
 
-.avatar {
+.avatar { 
   width: 20rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
