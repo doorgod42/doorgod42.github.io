@@ -18,11 +18,18 @@
 */
 @import url('barebones.css');
 
-@media screen and (prefers-color-scheme: dark) {
-  .safari10 { 
-    color:#d4d4e2; 
-    background-color:#1d1436; 
-  }
+@media not all and (min-resolution:.001dpcm) { 
+    @media {
+        .safari10 { 
+          color:#d4d4e2; 
+          background-color:#1d1436; 
+        }
+    }
+}
+
+
+
+@media screen and (prefers-color-scheme: dark) {  
   :root {
     
     /* dark theme: light background, dark text, blue accent */
